@@ -2,9 +2,9 @@
   "name": "examples",
   "version": "1.0.0",
   "devDependencies": {
-    "typescript": "^1.8.0",
+    "typescript": "^2.0.0-beta",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0",
-    "ts-loader": "^0.7.2"
+    "ts-loader": "^0.8.2"
   }
 }
