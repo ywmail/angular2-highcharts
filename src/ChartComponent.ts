@@ -29,11 +29,11 @@ export class ChartComponent {
     @Output() selection = new EventEmitter<ChartEvent>();
     chart: HighchartsChartObject;
     element: ElementRef;
-    highchartsService : HighchartsService;
+    highchartsService: HighchartsService;
     private userOpts: any;
     private baseOpts: any;
     @Input() type: string = 'Chart';
-    @Input() set options(opts : HighchartsOptions) {
+    @Input() set options(opts: HighchartsOptions) {
         this.userOpts = opts;
         this.init();
     };
@@ -50,7 +50,7 @@ export class ChartComponent {
         this.init();
     }
 
-    constructor(element: ElementRef, highchartsService : HighchartsService) {
+    constructor(element: ElementRef, highchartsService: HighchartsService) {
         this.element = element;
         this.highchartsService = highchartsService;
     }

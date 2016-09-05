@@ -1,20 +1,17 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
 import { ChartComponent } from './ChartComponent';
-export { ChartComponent }
 import { ChartSeriesComponent } from './ChartSeriesComponent';
-export { ChartSeriesComponent };
 import { ChartPointComponent } from './ChartPointComponent';
-export { ChartPointComponent };
 import { ChartXAxisComponent } from './ChartXAxisComponent';
-export { ChartXAxisComponent };
 import { ChartYAxisComponent } from './ChartYAxisComponent';
-export { ChartYAxisComponent };
 
-export { Highcharts } from './Highcharts';
+@NgModule({
+    imports: [CommonModule],
+    declarations: [ChartComponent, ChartSeriesComponent, ChartPointComponent, ChartXAxisComponent, ChartYAxisComponent],
+    providers: [],
+    exports: [ChartComponent]
+})
 
-export const CHART_DIRECTIVES: any[] = [
-    ChartComponent,
-    ChartSeriesComponent,
-    ChartPointComponent,
-    ChartXAxisComponent,
-    ChartYAxisComponent
-];
+export class HighchartsMoudle { }
